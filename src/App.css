@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: 'Seymour One', sans-serif;
+  background-color: rgba(49, 125, 238, 0.818);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: rgb(3, 3, 53);
+  font-size: 6rem;
+}
+
+.game-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-container {
+  display: flex;
+  width: 33rem;
+  height: auto;
+  margin: 0 auto;
+  /* margin-top: 1rem; */
+  margin-left: 15rem;
+}
+
+.pic {
+  zoom: 12%;
+}
+
+.boxes {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: aliceblue;
+  border: 5px solid #030335;
+  cursor: pointer;
+}
+
+.boxes:hover {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(204, 227, 244);
+  border: 5px solid #030335;
+  cursor: pointer;
+}
+
+.board {
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 200px;
+}
+
+.btn-restart {
+  font-size: 16px;
+  font-weight: 400;
+  width: 5rem;
+  display: flex;
+  padding: 0.5rem 6rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans', sans-serif;
+  border: none;
+  color: aliceblue;
+  background-color: #030335;
+  justify-content: center;
+  margin: 0 auto;
+}
