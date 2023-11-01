@@ -16,66 +16,123 @@ body {
 }
 
 .main {
+  /* will-change: unset; */
+}
+
+.title-cont {
+  width: 100%;
+  height: 8rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: rgb(3, 3, 53);
-  font-size: 6rem;
+  font-size: 5rem;
+}
+
+.title2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(231, 20, 238);
+  font-size: 3rem;
+  gap: 1rem;
+}
+
+.title3 {
+  display: flex;
+  align-items: center;
+  color: rgb(238, 151, 20);
+  background-color: aliceblue;
+  font-size: 2rem;
+}
+
+.winner {
+  width: 100%;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.high {
+  color: rgb(14, 238, 133);
 }
 
 .game-content {
-  margin-top: 2rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  /* position: fixed; */
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
-.img-container {
-  display: flex;
-  width: 33rem;
-  height: auto;
+/* .img-container {
+  width: 10rem;
   margin: 0 auto;
-  /* margin-top: 1rem; */
   margin-left: 15rem;
-}
+} */
 
 .pic {
-  zoom: 12%;
-}
-
-.boxes {
-  display: flex;
-  width: 120px;
-  height: 120px;
-  background-color: aliceblue;
-  border: 5px solid #030335;
-  cursor: pointer;
-}
-
-.boxes:hover {
-  display: flex;
-  width: 120px;
-  height: 120px;
-  background-color: rgb(204, 227, 244);
-  border: 5px solid #030335;
-  cursor: pointer;
+  zoom: 10%;
 }
 
 .board {
-  margin: 0 auto;
-  margin-top: 3rem;
   display: flex;
-  flex-direction: row;
-  width: 1000px;
-  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.gameBoard {
+  background-color: aliceblue;
+  height: auto;
+  border: 5px solid #030335;
+}
+
+.row {
+  display: flex;
+  height: 7rem;
+}
+
+.cell {
+  display: flex;
+  width: 7rem;
+  border: 5px solid #030335;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover {
+  display: flex;
+  width: 7rem;
+  background-color: rgb(174, 214, 248);
+  cursor: pointer;
+  border: 5px solid #030335;
+  justify-content: center;
+  align-items: center;
+}
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-restart {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   width: 5rem;
   display: flex;
   padding: 0.5rem 6rem;
@@ -85,5 +142,473 @@ body {
   color: aliceblue;
   background-color: #030335;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn-restart:hover {
+  font-size: 16px;
+  font-weight: 700;
+  width: 5rem;
+  display: flex;
+  padding: 0.5rem 6rem;
+  border-radius: 8px;
+  font-family: 'Sofia Sans', sans-serif;
+  border: none;
+  color: aliceblue;
+  background-color: #030335;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen {
+  @media (min-width: 630px) and (max-width: 870px) {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 4rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 2rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      /* flex-direction: column; */
+      /* position: fixed; */
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 7%;
+    }
+
+    .gameBoard {
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 320px) and (max-width: 631px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 2rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 4%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 100%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 5px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 268px) and (max-width: 320px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 2rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 4%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 100%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 5px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 150px) and (max-width: 269px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 1rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 0.75rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 3%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 90%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 3rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 3rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 3rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 500;
+      width: 2rem;
+      display: flex;
+      padding: 0.3rem 4rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 500;
+      width: 2rem;
+      display: flex;
+      padding: 0.3rem 4rem;
+      border-radius: 8px;
+      font-family: 'Sofia Sans', sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
 }
