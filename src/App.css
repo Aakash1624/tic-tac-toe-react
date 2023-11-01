@@ -82,7 +82,7 @@ body {
 } */
 
 .pic {
-  zoom: 10%;
+  zoom: 40%;
 }
 
 .board {
@@ -200,7 +200,7 @@ body {
     }
 
     .pic {
-      zoom: 7%;
+      zoom: 25%;
     }
 
     .gameBoard {
@@ -311,7 +311,7 @@ body {
     }
 
     .pic {
-      zoom: 4%;
+      zoom: 20%;
     }
 
     .board {
@@ -427,7 +427,7 @@ body {
     }
 
     .pic {
-      zoom: 4%;
+      zoom: 20%;
     }
 
     .board {
@@ -543,7 +543,7 @@ body {
     }
 
     .pic {
-      zoom: 3%;
+      zoom: 15%;
     }
 
     .board {
